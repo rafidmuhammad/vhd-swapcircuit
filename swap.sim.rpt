@@ -1,0 +1,510 @@
+Simulator report for swap
+Tue Jul 09 15:21:26 2024
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 149 nodes    ;
+; Simulation Coverage         ;      40.76 % ;
+; Total Number of Transitions ; 523          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; swap.vwf   ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      40.76 % ;
+; Total nodes checked                                 ; 149          ;
+; Total output ports checked                          ; 157          ;
+; Total output ports with complete 1/0-value coverage ; 64           ;
+; Total output ports with no 1/0-value coverage       ; 45           ;
+; Total output ports with no 1-value coverage         ; 85           ;
+; Total output ports with no 0-value coverage         ; 53           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                              ;
++---------------------------+---------------------------+------------------+
+; Node Name                 ; Output Port Name          ; Output Port Type ;
++---------------------------+---------------------------+------------------+
+; |swap|rin[1]              ; |swap|rin[1]              ; out0             ;
+; |swap|rin[2]              ; |swap|rin[2]              ; out0             ;
+; |swap|rin[3]              ; |swap|rin[3]              ; out0             ;
+; |swap|busWires[6]~1       ; |swap|busWires[6]~1       ; out0             ;
+; |swap|busWires[5]~2       ; |swap|busWires[5]~2       ; out0             ;
+; |swap|busWires[4]~3       ; |swap|busWires[4]~3       ; out0             ;
+; |swap|busWires[3]~4       ; |swap|busWires[3]~4       ; out0             ;
+; |swap|busWires[2]~5       ; |swap|busWires[2]~5       ; out0             ;
+; |swap|busWires[1]~6       ; |swap|busWires[1]~6       ; out0             ;
+; |swap|busWires[0]~7       ; |swap|busWires[0]~7       ; out0             ;
+; |swap|comb~1              ; |swap|comb~1              ; out0             ;
+; |swap|comb~2              ; |swap|comb~2              ; out0             ;
+; |swap|comb~3              ; |swap|comb~3              ; out0             ;
+; |swap|comb~4              ; |swap|comb~4              ; out0             ;
+; |swap|comb~5              ; |swap|comb~5              ; out0             ;
+; |swap|comb~6              ; |swap|comb~6              ; out0             ;
+; |swap|comb~7              ; |swap|comb~7              ; out0             ;
+; |swap|comb~9              ; |swap|comb~9              ; out0             ;
+; |swap|comb~10             ; |swap|comb~10             ; out0             ;
+; |swap|comb~11             ; |swap|comb~11             ; out0             ;
+; |swap|comb~12             ; |swap|comb~12             ; out0             ;
+; |swap|comb~13             ; |swap|comb~13             ; out0             ;
+; |swap|comb~14             ; |swap|comb~14             ; out0             ;
+; |swap|comb~15             ; |swap|comb~15             ; out0             ;
+; |swap|comb~17             ; |swap|comb~17             ; out0             ;
+; |swap|comb~18             ; |swap|comb~18             ; out0             ;
+; |swap|comb~19             ; |swap|comb~19             ; out0             ;
+; |swap|comb~20             ; |swap|comb~20             ; out0             ;
+; |swap|comb~21             ; |swap|comb~21             ; out0             ;
+; |swap|comb~22             ; |swap|comb~22             ; out0             ;
+; |swap|comb~23             ; |swap|comb~23             ; out0             ;
+; |swap|data[0]             ; |swap|data[0]             ; out              ;
+; |swap|data[1]             ; |swap|data[1]             ; out              ;
+; |swap|data[2]             ; |swap|data[2]             ; out              ;
+; |swap|data[3]             ; |swap|data[3]             ; out              ;
+; |swap|data[4]             ; |swap|data[4]             ; out              ;
+; |swap|data[5]             ; |swap|data[5]             ; out              ;
+; |swap|data[6]             ; |swap|data[6]             ; out              ;
+; |swap|w                   ; |swap|w                   ; out              ;
+; |swap|clock               ; |swap|clock               ; out              ;
+; |swap|busWires[0]         ; |swap|busWires[0]~result  ; pin_out          ;
+; |swap|busWires[1]         ; |swap|busWires[1]~result  ; pin_out          ;
+; |swap|busWires[2]         ; |swap|busWires[2]~result  ; pin_out          ;
+; |swap|busWires[3]         ; |swap|busWires[3]~result  ; pin_out          ;
+; |swap|busWires[4]         ; |swap|busWires[4]~result  ; pin_out          ;
+; |swap|busWires[5]         ; |swap|busWires[5]~result  ; pin_out          ;
+; |swap|busWires[6]         ; |swap|busWires[6]~result  ; pin_out          ;
+; |swap|busWires[6]~33      ; |swap|busWires[6]~33      ; out0             ;
+; |swap|busWires[5]~34      ; |swap|busWires[5]~34      ; out0             ;
+; |swap|busWires[4]~35      ; |swap|busWires[4]~35      ; out0             ;
+; |swap|busWires[3]~36      ; |swap|busWires[3]~36      ; out0             ;
+; |swap|busWires[2]~37      ; |swap|busWires[2]~37      ; out0             ;
+; |swap|busWires[1]~38      ; |swap|busWires[1]~38      ; out0             ;
+; |swap|busWires[0]~39      ; |swap|busWires[0]~39      ; out0             ;
+; |swap|trin:tri_ext|F[0]   ; |swap|trin:tri_ext|F[0]   ; out              ;
+; |swap|trin:tri_ext|F[1]   ; |swap|trin:tri_ext|F[1]   ; out              ;
+; |swap|trin:tri_ext|F[2]   ; |swap|trin:tri_ext|F[2]   ; out              ;
+; |swap|trin:tri_ext|F[3]   ; |swap|trin:tri_ext|F[3]   ; out              ;
+; |swap|trin:tri_ext|F[4]   ; |swap|trin:tri_ext|F[4]   ; out              ;
+; |swap|trin:tri_ext|F[5]   ; |swap|trin:tri_ext|F[5]   ; out              ;
+; |swap|trin:tri_ext|F[6]   ; |swap|trin:tri_ext|F[6]   ; out              ;
+; |swap|shiftr:control|q[1] ; |swap|shiftr:control|q[1] ; regout           ;
+; |swap|shiftr:control|q[2] ; |swap|shiftr:control|q[2] ; regout           ;
+; |swap|shiftr:control|q[3] ; |swap|shiftr:control|q[3] ; regout           ;
++---------------------------+---------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------+
+; Missing 1-Value Coverage                                       ;
++----------------------+----------------------+------------------+
+; Node Name            ; Output Port Name     ; Output Port Type ;
++----------------------+----------------------+------------------+
+; |swap|busWires[7]~8  ; |swap|busWires[7]~8  ; out0             ;
+; |swap|busWires[6]~9  ; |swap|busWires[6]~9  ; out0             ;
+; |swap|busWires[5]~10 ; |swap|busWires[5]~10 ; out0             ;
+; |swap|busWires[4]~11 ; |swap|busWires[4]~11 ; out0             ;
+; |swap|busWires[3]~12 ; |swap|busWires[3]~12 ; out0             ;
+; |swap|busWires[2]~13 ; |swap|busWires[2]~13 ; out0             ;
+; |swap|busWires[1]~14 ; |swap|busWires[1]~14 ; out0             ;
+; |swap|busWires[0]~15 ; |swap|busWires[0]~15 ; out0             ;
+; |swap|busWires[7]~16 ; |swap|busWires[7]~16 ; out0             ;
+; |swap|busWires[6]~17 ; |swap|busWires[6]~17 ; out0             ;
+; |swap|busWires[5]~18 ; |swap|busWires[5]~18 ; out0             ;
+; |swap|busWires[4]~19 ; |swap|busWires[4]~19 ; out0             ;
+; |swap|busWires[3]~20 ; |swap|busWires[3]~20 ; out0             ;
+; |swap|busWires[2]~21 ; |swap|busWires[2]~21 ; out0             ;
+; |swap|busWires[1]~22 ; |swap|busWires[1]~22 ; out0             ;
+; |swap|busWires[0]~23 ; |swap|busWires[0]~23 ; out0             ;
+; |swap|busWires[7]~24 ; |swap|busWires[7]~24 ; out0             ;
+; |swap|busWires[6]~25 ; |swap|busWires[6]~25 ; out0             ;
+; |swap|busWires[5]~26 ; |swap|busWires[5]~26 ; out0             ;
+; |swap|busWires[4]~27 ; |swap|busWires[4]~27 ; out0             ;
+; |swap|busWires[3]~28 ; |swap|busWires[3]~28 ; out0             ;
+; |swap|busWires[2]~29 ; |swap|busWires[2]~29 ; out0             ;
+; |swap|busWires[1]~30 ; |swap|busWires[1]~30 ; out0             ;
+; |swap|busWires[0]~31 ; |swap|busWires[0]~31 ; out0             ;
+; |swap|resetn         ; |swap|resetn         ; out              ;
+; |swap|extern         ; |swap|extern         ; out              ;
+; |swap|RinExt[3]      ; |swap|RinExt[3]      ; out              ;
+; |swap|RinExt[2]      ; |swap|RinExt[2]      ; out              ;
+; |swap|RinExt[1]      ; |swap|RinExt[1]      ; out              ;
+; |swap|busWires[0]    ; |swap|busWires[0]    ; out              ;
+; |swap|busWires[1]    ; |swap|busWires[1]    ; out              ;
+; |swap|busWires[2]    ; |swap|busWires[2]    ; out              ;
+; |swap|busWires[3]    ; |swap|busWires[3]    ; out              ;
+; |swap|busWires[4]    ; |swap|busWires[4]    ; out              ;
+; |swap|busWires[5]    ; |swap|busWires[5]    ; out              ;
+; |swap|busWires[6]    ; |swap|busWires[6]    ; out              ;
+; |swap|busWires[7]    ; |swap|busWires[7]    ; out              ;
+; |swap|trin:tri3|F[0] ; |swap|trin:tri3|F[0] ; out              ;
+; |swap|trin:tri3|F[1] ; |swap|trin:tri3|F[1] ; out              ;
+; |swap|trin:tri3|F[2] ; |swap|trin:tri3|F[2] ; out              ;
+; |swap|trin:tri3|F[3] ; |swap|trin:tri3|F[3] ; out              ;
+; |swap|trin:tri3|F[4] ; |swap|trin:tri3|F[4] ; out              ;
+; |swap|trin:tri3|F[5] ; |swap|trin:tri3|F[5] ; out              ;
+; |swap|trin:tri3|F[6] ; |swap|trin:tri3|F[6] ; out              ;
+; |swap|trin:tri3|F[7] ; |swap|trin:tri3|F[7] ; out              ;
+; |swap|trin:tri2|F[0] ; |swap|trin:tri2|F[0] ; out              ;
+; |swap|trin:tri2|F[1] ; |swap|trin:tri2|F[1] ; out              ;
+; |swap|trin:tri2|F[2] ; |swap|trin:tri2|F[2] ; out              ;
+; |swap|trin:tri2|F[3] ; |swap|trin:tri2|F[3] ; out              ;
+; |swap|trin:tri2|F[4] ; |swap|trin:tri2|F[4] ; out              ;
+; |swap|trin:tri2|F[5] ; |swap|trin:tri2|F[5] ; out              ;
+; |swap|trin:tri2|F[6] ; |swap|trin:tri2|F[6] ; out              ;
+; |swap|trin:tri2|F[7] ; |swap|trin:tri2|F[7] ; out              ;
+; |swap|trin:tri1|F[0] ; |swap|trin:tri1|F[0] ; out              ;
+; |swap|trin:tri1|F[1] ; |swap|trin:tri1|F[1] ; out              ;
+; |swap|trin:tri1|F[2] ; |swap|trin:tri1|F[2] ; out              ;
+; |swap|trin:tri1|F[3] ; |swap|trin:tri1|F[3] ; out              ;
+; |swap|trin:tri1|F[4] ; |swap|trin:tri1|F[4] ; out              ;
+; |swap|trin:tri1|F[5] ; |swap|trin:tri1|F[5] ; out              ;
+; |swap|trin:tri1|F[6] ; |swap|trin:tri1|F[6] ; out              ;
+; |swap|trin:tri1|F[7] ; |swap|trin:tri1|F[7] ; out              ;
+; |swap|regn:reg3|Q[0] ; |swap|regn:reg3|Q[0] ; regout           ;
+; |swap|regn:reg3|Q[1] ; |swap|regn:reg3|Q[1] ; regout           ;
+; |swap|regn:reg3|Q[2] ; |swap|regn:reg3|Q[2] ; regout           ;
+; |swap|regn:reg3|Q[3] ; |swap|regn:reg3|Q[3] ; regout           ;
+; |swap|regn:reg3|Q[4] ; |swap|regn:reg3|Q[4] ; regout           ;
+; |swap|regn:reg3|Q[5] ; |swap|regn:reg3|Q[5] ; regout           ;
+; |swap|regn:reg3|Q[6] ; |swap|regn:reg3|Q[6] ; regout           ;
+; |swap|regn:reg3|Q[7] ; |swap|regn:reg3|Q[7] ; regout           ;
+; |swap|regn:reg2|Q[0] ; |swap|regn:reg2|Q[0] ; regout           ;
+; |swap|regn:reg2|Q[1] ; |swap|regn:reg2|Q[1] ; regout           ;
+; |swap|regn:reg2|Q[2] ; |swap|regn:reg2|Q[2] ; regout           ;
+; |swap|regn:reg2|Q[3] ; |swap|regn:reg2|Q[3] ; regout           ;
+; |swap|regn:reg2|Q[4] ; |swap|regn:reg2|Q[4] ; regout           ;
+; |swap|regn:reg2|Q[5] ; |swap|regn:reg2|Q[5] ; regout           ;
+; |swap|regn:reg2|Q[6] ; |swap|regn:reg2|Q[6] ; regout           ;
+; |swap|regn:reg2|Q[7] ; |swap|regn:reg2|Q[7] ; regout           ;
+; |swap|regn:reg1|Q[0] ; |swap|regn:reg1|Q[0] ; regout           ;
+; |swap|regn:reg1|Q[1] ; |swap|regn:reg1|Q[1] ; regout           ;
+; |swap|regn:reg1|Q[2] ; |swap|regn:reg1|Q[2] ; regout           ;
+; |swap|regn:reg1|Q[3] ; |swap|regn:reg1|Q[3] ; regout           ;
+; |swap|regn:reg1|Q[4] ; |swap|regn:reg1|Q[4] ; regout           ;
+; |swap|regn:reg1|Q[5] ; |swap|regn:reg1|Q[5] ; regout           ;
+; |swap|regn:reg1|Q[6] ; |swap|regn:reg1|Q[6] ; regout           ;
+; |swap|regn:reg1|Q[7] ; |swap|regn:reg1|Q[7] ; regout           ;
++----------------------+----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-----------------------------------------------------------------------+
+; Missing 0-Value Coverage                                              ;
++-------------------------+--------------------------+------------------+
+; Node Name               ; Output Port Name         ; Output Port Type ;
++-------------------------+--------------------------+------------------+
+; |swap|busWires[7]~0     ; |swap|busWires[7]~0      ; out0             ;
+; |swap|comb~0            ; |swap|comb~0             ; out0             ;
+; |swap|comb~8            ; |swap|comb~8             ; out0             ;
+; |swap|comb~16           ; |swap|comb~16            ; out0             ;
+; |swap|busWires[7]~24    ; |swap|busWires[7]~24     ; out0             ;
+; |swap|busWires[5]~26    ; |swap|busWires[5]~26     ; out0             ;
+; |swap|busWires[3]~28    ; |swap|busWires[3]~28     ; out0             ;
+; |swap|busWires[1]~30    ; |swap|busWires[1]~30     ; out0             ;
+; |swap|data[7]           ; |swap|data[7]            ; out              ;
+; |swap|resetn            ; |swap|resetn             ; out              ;
+; |swap|extern            ; |swap|extern             ; out              ;
+; |swap|RinExt[3]         ; |swap|RinExt[3]          ; out              ;
+; |swap|RinExt[2]         ; |swap|RinExt[2]          ; out              ;
+; |swap|RinExt[1]         ; |swap|RinExt[1]          ; out              ;
+; |swap|busWires[0]       ; |swap|busWires[0]        ; out              ;
+; |swap|busWires[1]       ; |swap|busWires[1]        ; out              ;
+; |swap|busWires[2]       ; |swap|busWires[2]        ; out              ;
+; |swap|busWires[3]       ; |swap|busWires[3]        ; out              ;
+; |swap|busWires[4]       ; |swap|busWires[4]        ; out              ;
+; |swap|busWires[5]       ; |swap|busWires[5]        ; out              ;
+; |swap|busWires[6]       ; |swap|busWires[6]        ; out              ;
+; |swap|busWires[7]       ; |swap|busWires[7]        ; out              ;
+; |swap|busWires[7]       ; |swap|busWires[7]~result ; pin_out          ;
+; |swap|busWires[7]~32    ; |swap|busWires[7]~32     ; out0             ;
+; |swap|trin:tri3|F[1]    ; |swap|trin:tri3|F[1]     ; out              ;
+; |swap|trin:tri3|F[3]    ; |swap|trin:tri3|F[3]     ; out              ;
+; |swap|trin:tri3|F[5]    ; |swap|trin:tri3|F[5]     ; out              ;
+; |swap|trin:tri3|F[7]    ; |swap|trin:tri3|F[7]     ; out              ;
+; |swap|regn:reg3|Q[0]    ; |swap|regn:reg3|Q[0]     ; regout           ;
+; |swap|regn:reg3|Q[1]    ; |swap|regn:reg3|Q[1]     ; regout           ;
+; |swap|regn:reg3|Q[2]    ; |swap|regn:reg3|Q[2]     ; regout           ;
+; |swap|regn:reg3|Q[3]    ; |swap|regn:reg3|Q[3]     ; regout           ;
+; |swap|regn:reg3|Q[4]    ; |swap|regn:reg3|Q[4]     ; regout           ;
+; |swap|regn:reg3|Q[5]    ; |swap|regn:reg3|Q[5]     ; regout           ;
+; |swap|regn:reg3|Q[6]    ; |swap|regn:reg3|Q[6]     ; regout           ;
+; |swap|regn:reg3|Q[7]    ; |swap|regn:reg3|Q[7]     ; regout           ;
+; |swap|regn:reg2|Q[0]    ; |swap|regn:reg2|Q[0]     ; regout           ;
+; |swap|regn:reg2|Q[1]    ; |swap|regn:reg2|Q[1]     ; regout           ;
+; |swap|regn:reg2|Q[2]    ; |swap|regn:reg2|Q[2]     ; regout           ;
+; |swap|regn:reg2|Q[3]    ; |swap|regn:reg2|Q[3]     ; regout           ;
+; |swap|regn:reg2|Q[4]    ; |swap|regn:reg2|Q[4]     ; regout           ;
+; |swap|regn:reg2|Q[5]    ; |swap|regn:reg2|Q[5]     ; regout           ;
+; |swap|regn:reg2|Q[6]    ; |swap|regn:reg2|Q[6]     ; regout           ;
+; |swap|regn:reg2|Q[7]    ; |swap|regn:reg2|Q[7]     ; regout           ;
+; |swap|regn:reg1|Q[0]    ; |swap|regn:reg1|Q[0]     ; regout           ;
+; |swap|regn:reg1|Q[1]    ; |swap|regn:reg1|Q[1]     ; regout           ;
+; |swap|regn:reg1|Q[2]    ; |swap|regn:reg1|Q[2]     ; regout           ;
+; |swap|regn:reg1|Q[3]    ; |swap|regn:reg1|Q[3]     ; regout           ;
+; |swap|regn:reg1|Q[4]    ; |swap|regn:reg1|Q[4]     ; regout           ;
+; |swap|regn:reg1|Q[5]    ; |swap|regn:reg1|Q[5]     ; regout           ;
+; |swap|regn:reg1|Q[6]    ; |swap|regn:reg1|Q[6]     ; regout           ;
+; |swap|regn:reg1|Q[7]    ; |swap|regn:reg1|Q[7]     ; regout           ;
+; |swap|trin:tri_ext|F[7] ; |swap|trin:tri_ext|F[7]  ; out              ;
++-------------------------+--------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Jul 09 15:21:26 2024
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off swap -c swap
+Info: Using vector source file "C:/Users/oldfa/Documents/rafids stuff/swapCircuit/swap.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of swap.vwf called swap.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found logic contention at time 25.0 ns on bus node "|swap|busWires[1]~38"
+    Info: Node "busWires[1]" has logic level of Z
+    Info: Node "busWires[1]~30" has logic level of Z
+    Info: Node "busWires[1]~22" has logic level of 0
+    Info: Node "busWires[1]~14" has logic level of Z
+    Info: Node "busWires[1]~6" has logic level of 1
+Warning: Found logic contention at time 25.0 ns on bus node "|swap|busWires[3]~36"
+    Info: Node "busWires[3]" has logic level of Z
+    Info: Node "busWires[3]~28" has logic level of Z
+    Info: Node "busWires[3]~20" has logic level of 0
+    Info: Node "busWires[3]~12" has logic level of Z
+    Info: Node "busWires[3]~4" has logic level of 1
+Warning: Found logic contention at time 25.0 ns on bus node "|swap|busWires[5]~34"
+    Info: Node "busWires[5]" has logic level of Z
+    Info: Node "busWires[5]~26" has logic level of Z
+    Info: Node "busWires[5]~18" has logic level of 0
+    Info: Node "busWires[5]~10" has logic level of Z
+    Info: Node "busWires[5]~2" has logic level of 1
+Warning: Found logic contention at time 25.0 ns on bus node "|swap|busWires[7]~32"
+    Info: Node "busWires[7]" has logic level of Z
+    Info: Node "busWires[7]~24" has logic level of Z
+    Info: Node "busWires[7]~16" has logic level of 0
+    Info: Node "busWires[7]~8" has logic level of Z
+    Info: Node "busWires[7]~0" has logic level of 1
+Warning: Found logic contention at time 35.0 ns on bus node "|swap|busWires[4]~35"
+    Info: Node "busWires[4]" has logic level of Z
+    Info: Node "busWires[4]~27" has logic level of Z
+    Info: Node "busWires[4]~19" has logic level of 0
+    Info: Node "busWires[4]~11" has logic level of Z
+    Info: Node "busWires[4]~3" has logic level of 1
+Warning: Found logic contention at time 35.0 ns on bus node "|swap|busWires[6]~33"
+    Info: Node "busWires[6]" has logic level of Z
+    Info: Node "busWires[6]~25" has logic level of Z
+    Info: Node "busWires[6]~17" has logic level of 0
+    Info: Node "busWires[6]~9" has logic level of Z
+    Info: Node "busWires[6]~1" has logic level of 1
+Warning: Found logic contention at time 35.0 ns on bus node "|swap|busWires[4]~35"
+    Info: Node "busWires[4]" has logic level of Z
+    Info: Node "busWires[4]~27" has logic level of Z
+    Info: Node "busWires[4]~19" has logic level of Z
+    Info: Node "busWires[4]~11" has logic level of 0
+    Info: Node "busWires[4]~3" has logic level of 1
+Warning: Found logic contention at time 35.0 ns on bus node "|swap|busWires[6]~33"
+    Info: Node "busWires[6]" has logic level of Z
+    Info: Node "busWires[6]~25" has logic level of Z
+    Info: Node "busWires[6]~17" has logic level of Z
+    Info: Node "busWires[6]~9" has logic level of 0
+    Info: Node "busWires[6]~1" has logic level of 1
+Warning: Found logic contention at time 35.0 ns on bus node "|swap|busWires[7]~32"
+    Info: Node "busWires[7]" has logic level of Z
+    Info: Node "busWires[7]~24" has logic level of Z
+    Info: Node "busWires[7]~16" has logic level of Z
+    Info: Node "busWires[7]~8" has logic level of 0
+    Info: Node "busWires[7]~0" has logic level of 1
+Warning: Found logic contention at time 35.0 ns on bus node "|swap|busWires[4]~35"
+    Info: Node "busWires[4]" has logic level of Z
+    Info: Node "busWires[4]~27" has logic level of Z
+    Info: Node "busWires[4]~19" has logic level of Z
+    Info: Node "busWires[4]~11" has logic level of 0
+    Info: Node "busWires[4]~3" has logic level of 1
+Warning: Found logic contention at time 35.0 ns on bus node "|swap|busWires[6]~33"
+    Info: Node "busWires[6]" has logic level of Z
+    Info: Node "busWires[6]~25" has logic level of Z
+    Info: Node "busWires[6]~17" has logic level of Z
+    Info: Node "busWires[6]~9" has logic level of 0
+    Info: Node "busWires[6]~1" has logic level of 1
+Warning: Found logic contention at time 35.0 ns on bus node "|swap|busWires[7]~32"
+    Info: Node "busWires[7]" has logic level of Z
+    Info: Node "busWires[7]~24" has logic level of Z
+    Info: Node "busWires[7]~16" has logic level of Z
+    Info: Node "busWires[7]~8" has logic level of 0
+    Info: Node "busWires[7]~0" has logic level of 1
+Warning: Found logic contention at time 45.0 ns on bus node "|swap|busWires[1]~38"
+    Info: Node "busWires[1]" has logic level of Z
+    Info: Node "busWires[1]~30" has logic level of X
+    Info: Node "busWires[1]~22" has logic level of Z
+    Info: Node "busWires[1]~14" has logic level of Z
+    Info: Node "busWires[1]~6" has logic level of 0
+Warning: Found logic contention at time 45.0 ns on bus node "|swap|busWires[3]~36"
+    Info: Node "busWires[3]" has logic level of Z
+    Info: Node "busWires[3]~28" has logic level of X
+    Info: Node "busWires[3]~20" has logic level of Z
+    Info: Node "busWires[3]~12" has logic level of Z
+    Info: Node "busWires[3]~4" has logic level of 0
+Warning: Found logic contention at time 45.0 ns on bus node "|swap|busWires[4]~35"
+    Info: Node "busWires[4]" has logic level of Z
+    Info: Node "busWires[4]~27" has logic level of 0
+    Info: Node "busWires[4]~19" has logic level of Z
+    Info: Node "busWires[4]~11" has logic level of Z
+    Info: Node "busWires[4]~3" has logic level of 1
+Warning: Found logic contention at time 45.0 ns on bus node "|swap|busWires[5]~34"
+    Info: Node "busWires[5]" has logic level of Z
+    Info: Node "busWires[5]~26" has logic level of X
+    Info: Node "busWires[5]~18" has logic level of Z
+    Info: Node "busWires[5]~10" has logic level of Z
+    Info: Node "busWires[5]~2" has logic level of 0
+Warning: Found logic contention at time 45.0 ns on bus node "|swap|busWires[6]~33"
+    Info: Node "busWires[6]" has logic level of Z
+    Info: Node "busWires[6]~25" has logic level of 0
+    Info: Node "busWires[6]~17" has logic level of Z
+    Info: Node "busWires[6]~9" has logic level of Z
+    Info: Node "busWires[6]~1" has logic level of 1
+Warning: Found logic contention at time 45.0 ns on bus node "|swap|busWires[7]~32"
+    Info: Node "busWires[7]" has logic level of Z
+    Info: Node "busWires[7]~24" has logic level of X
+    Info: Node "busWires[7]~16" has logic level of Z
+    Info: Node "busWires[7]~8" has logic level of Z
+    Info: Node "busWires[7]~0" has logic level of 1
+Warning: Found logic contention at time 45.0 ns on bus node "|swap|busWires[1]~38"
+    Info: Node "busWires[1]" has logic level of Z
+    Info: Node "busWires[1]~30" has logic level of X
+    Info: Node "busWires[1]~22" has logic level of Z
+    Info: Node "busWires[1]~14" has logic level of Z
+    Info: Node "busWires[1]~6" has logic level of 0
+Warning: Found logic contention at time 45.0 ns on bus node "|swap|busWires[3]~36"
+    Info: Node "busWires[3]" has logic level of Z
+    Info: Node "busWires[3]~28" has logic level of X
+    Info: Node "busWires[3]~20" has logic level of Z
+    Info: Node "busWires[3]~12" has logic level of Z
+    Info: Node "busWires[3]~4" has logic level of 0
+Warning: Found logic contention at time 45.0 ns on bus node "|swap|busWires[4]~35"
+    Info: Node "busWires[4]" has logic level of Z
+    Info: Node "busWires[4]~27" has logic level of 0
+    Info: Node "busWires[4]~19" has logic level of Z
+    Info: Node "busWires[4]~11" has logic level of Z
+    Info: Node "busWires[4]~3" has logic level of 1
+Warning: Found logic contention at time 45.0 ns on bus node "|swap|busWires[5]~34"
+    Info: Node "busWires[5]" has logic level of Z
+    Info: Node "busWires[5]~26" has logic level of X
+    Info: Node "busWires[5]~18" has logic level of Z
+    Info: Node "busWires[5]~10" has logic level of Z
+    Info: Node "busWires[5]~2" has logic level of 0
+Warning: Found logic contention at time 45.0 ns on bus node "|swap|busWires[6]~33"
+    Info: Node "busWires[6]" has logic level of Z
+    Info: Node "busWires[6]~25" has logic level of 0
+    Info: Node "busWires[6]~17" has logic level of Z
+    Info: Node "busWires[6]~9" has logic level of Z
+    Info: Node "busWires[6]~1" has logic level of 1
+Warning: Found logic contention at time 45.0 ns on bus node "|swap|busWires[7]~32"
+    Info: Node "busWires[7]" has logic level of Z
+    Info: Node "busWires[7]~24" has logic level of X
+    Info: Node "busWires[7]~16" has logic level of Z
+    Info: Node "busWires[7]~8" has logic level of Z
+    Info: Node "busWires[7]~0" has logic level of 1
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      40.76 %
+Info: Number of transitions in simulation is 523
+Info: Vector file swap.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 24 warnings
+    Info: Peak virtual memory: 145 megabytes
+    Info: Processing ended: Tue Jul 09 15:21:26 2024
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,228 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/oldfa/Documents/rafids stuff/swapCircuit
+Pcomponents
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+w1720507161
+R0
+8C:/Users/oldfa/Documents/rafids stuff/swapCircuit/components.vhd
+FC:/Users/oldfa/Documents/rafids stuff/swapCircuit/components.vhd
+l0
+L4
+VC6Z?;3@X2`m[8gAC1U=1f3
+!s100 6gH]9?5bP3Y4j<G29]TgH3
+Z3 OV;C;10.6d;65
+32
+!s110 1720510766
+!i10b 1
+!s108 1720510766.000000
+!s90 -reportprogress|300|-work|work|C:/Users/oldfa/Documents/rafids stuff/swapCircuit/components.vhd|
+!s107 C:/Users/oldfa/Documents/rafids stuff/swapCircuit/components.vhd|
+!i113 1
+Z4 o-work work
+Z5 tExplicit 1 CvgOpt 0
+Eregn
+Z6 w1720498206
+R1
+R2
+R0
+Z7 8C:/Users/oldfa/Documents/rafids stuff/swapCircuit/regn.vhd
+Z8 FC:/Users/oldfa/Documents/rafids stuff/swapCircuit/regn.vhd
+l0
+L4
+VUz`@_:V6gIZY_^F5A2KGQ3
+!s100 Jn?OPbD_dU^QJQWk98kQ;0
+R3
+32
+Z9 !s110 1720510764
+!i10b 1
+Z10 !s108 1720510764.000000
+Z11 !s90 -reportprogress|300|-work|work|C:/Users/oldfa/Documents/rafids stuff/swapCircuit/regn.vhd|
+Z12 !s107 C:/Users/oldfa/Documents/rafids stuff/swapCircuit/regn.vhd|
+!i113 1
+R4
+R5
+Abehavioral
+R1
+R2
+DEx4 work 4 regn 0 22 Uz`@_:V6gIZY_^F5A2KGQ3
+l14
+L13
+VDJ<Q[z[@`nKMBZ6accKJ]3
+!s100 Qf[=WBH@T1ecn;GJ@GMCJ0
+R3
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R4
+R5
+Eshiftr
+Z13 w1720505340
+R1
+R2
+R0
+Z14 8C:/Users/oldfa/Documents/rafids stuff/swapCircuit/shiftr.vhd
+Z15 FC:/Users/oldfa/Documents/rafids stuff/swapCircuit/shiftr.vhd
+l0
+L4
+VgG?Zb2d;Z^O4cFbIgi`hL0
+!s100 `RI^OF5Z[Jfh0ild85Ekj2
+R3
+32
+Z16 !s110 1720510762
+!i10b 1
+Z17 !s108 1720510762.000000
+Z18 !s90 -reportprogress|300|-work|work|C:/Users/oldfa/Documents/rafids stuff/swapCircuit/shiftr.vhd|
+Z19 !s107 C:/Users/oldfa/Documents/rafids stuff/swapCircuit/shiftr.vhd|
+!i113 1
+R4
+R5
+Abehavioral
+R1
+R2
+DEx4 work 6 shiftr 0 22 gG?Zb2d;Z^O4cFbIgi`hL0
+l13
+L12
+V6=hSi:<;h]5hOmN;^_HO73
+!s100 U`bONeiADH@z=1`XMgm8X0
+R3
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R4
+R5
+Eswap
+Z20 w1720508181
+Z21 DPx4 work 10 components 0 22 C6Z?;3@X2`m[8gAC1U=1f3
+R1
+R2
+R0
+Z22 8C:/Users/oldfa/Documents/rafids stuff/swapCircuit/swap.vhd
+Z23 FC:/Users/oldfa/Documents/rafids stuff/swapCircuit/swap.vhd
+l0
+L5
+VmM:j6AoGebn?`:^_=Pg@43
+!s100 UGg1[VNMafV28P_LfI^:c0
+R3
+32
+Z24 !s110 1720510768
+!i10b 1
+Z25 !s108 1720510768.000000
+Z26 !s90 -reportprogress|300|-work|work|C:/Users/oldfa/Documents/rafids stuff/swapCircuit/swap.vhd|
+Z27 !s107 C:/Users/oldfa/Documents/rafids stuff/swapCircuit/swap.vhd|
+!i113 1
+R4
+R5
+Abehavioral
+R21
+R1
+R2
+DEx4 work 4 swap 0 22 mM:j6AoGebn?`:^_=Pg@43
+l18
+L15
+V`5KZ4Z@TS6nXnH:dL7JP:1
+!s100 NUkm2h_z901GCF7V[^Kac3
+R3
+32
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R4
+R5
+Etestbench
+Z28 w1720531249
+R1
+R2
+R0
+Z29 8C:/Users/oldfa/Documents/rafids stuff/swapCircuit/testbench.vhd
+Z30 FC:/Users/oldfa/Documents/rafids stuff/swapCircuit/testbench.vhd
+l0
+L4
+VRg7?Y`OE118U?NAFb0XMn0
+!s100 9:jIo@@Yc5=oGBdFeoY^c0
+R3
+32
+Z31 !s110 1720531257
+!i10b 1
+Z32 !s108 1720531257.000000
+Z33 !s90 -reportprogress|300|-work|work|C:/Users/oldfa/Documents/rafids stuff/swapCircuit/testbench.vhd|
+Z34 !s107 C:/Users/oldfa/Documents/rafids stuff/swapCircuit/testbench.vhd|
+!i113 1
+R4
+R5
+Abehavioral
+R1
+R2
+Z35 DEx4 work 9 testbench 0 22 Rg7?Y`OE118U?NAFb0XMn0
+l26
+L9
+VGk_P8iSi>oE3i1^9Q3ROc1
+!s100 IdTM8@14WFaRWi7bNfZHb2
+R3
+32
+R31
+!i10b 1
+R32
+R33
+R34
+!i113 1
+R4
+R5
+Etrin
+Z36 w1720498727
+R1
+R2
+R0
+Z37 8C:/Users/oldfa/Documents/rafids stuff/swapCircuit/trin.vhd
+Z38 FC:/Users/oldfa/Documents/rafids stuff/swapCircuit/trin.vhd
+l0
+L4
+VTmJ6I8S?WgC1W_LHz=YMM0
+!s100 XSHSH:3XmZ>l^__Gc3]k93
+R3
+32
+Z39 !s110 1720510753
+!i10b 1
+Z40 !s108 1720510753.000000
+Z41 !s90 -reportprogress|300|-work|work|C:/Users/oldfa/Documents/rafids stuff/swapCircuit/trin.vhd|
+Z42 !s107 C:/Users/oldfa/Documents/rafids stuff/swapCircuit/trin.vhd|
+!i113 1
+R4
+R5
+Abehavioral
+R1
+R2
+DEx4 work 4 trin 0 22 TmJ6I8S?WgC1W_LHz=YMM0
+l15
+L14
+VTgc_LoPEH[Pk:;AQDe?h<1
+!s100 44ZlmjD8^<jfZJ1jXF]kG3
+R3
+32
+R39
+!i10b 1
+R40
+R41
+R42
+!i113 1
+R4
+R5
